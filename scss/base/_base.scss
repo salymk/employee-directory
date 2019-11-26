@@ -1,0 +1,129 @@
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+// * {
+//     font-family: 'Lato', sans-serif;
+//     box-sizing: border-box;
+//   }
+//
+// body {
+//   position: relative;
+//   background-color: #F8F8F8	;
+//   padding: 25px;
+//  }
+//
+//  textarea, select, input, button { outline: none; }
+//
+//
+// header {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   h1 {
+//     font-size: 1.2em;
+//     color: #585858;
+//     margin: 0;
+//   }
+//   margin-bottom: 20px;
+//
+//   .search-container {
+//     width: 40%;
+//
+//     #search {
+//       width: 85%;
+//       border: 1px solid #E8E8E8;
+//       border-radius: 10px;
+//       padding: 10px;
+//       line-height: 0;
+//       background-image: url(../icons/search-icon.svg);
+//       background-repeat: no-repeat;
+//       background-size: 25px 25px;
+//       background-position: 98% 50%;
+//       cursor: pointer;
+//       -webkit-transition: border .4s ease-out;
+//       -o-transition: border .4s ease-out;
+//       transition: border .4s ease-out;
+//     }
+//   }
+// }
+
+
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+  }
+
+body {
+  position: relative;
+  background-color: #F8F8F8	;
+ }
+
+ textarea, select, input, button { outline: none; }
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 1.4em;
+    color: #585858;
+    margin: 0;
+    text-align: center;
+  }
+
+  .search-container {
+    width: 300px;
+    margin-top: 15px;
+
+    #search {
+      width: 100%;
+      border: 1px solid #E8E8E8;
+      border-radius: 10px;
+      padding: 10px;
+      line-height: 0;
+      background-image: url(../icons/search-icon.svg);
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      background-position: 98% 50%;
+      cursor: pointer;
+      -webkit-transition: border .4s ease-out;
+      -o-transition: border .4s ease-out;
+      transition: border .4s ease-out;
+    }
+  }
+}
+
+
+//Media Quries
+
+@media (min-width: 768px) {
+
+  body {
+    padding: 25px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 1.3em;
+      color: #585858;
+    }
+
+    .search-container {
+      width: 40%;
+
+      #search {
+        width: 95%;
+      }
+    }
+  }
+}
